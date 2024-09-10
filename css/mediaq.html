@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            width: 500px;
+            background: greenyellow;
+            border: 2px solid black;
+            display: flex;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+        img{
+            height: 150px;
+        }
+        .i{
+            background-color: violet;
+            border: 1px solid blue;
+            margin: 5px;
+            padding: 5px;
+            width: 46%;
+        }
+        .text{
+            background-color: blueviolet;
+            border: 1px solid brown;
+            margin:5px;
+            padding: 5px;
+            width: 46%;
+        }
+        p{
+            border: 1px solid darkgreen;
+        }
+        /* @media (min-width:640px) {
+            .cont{
+                flex-direction: row;
+            }
+        } */
+        @media (max-width:640px) {
+            .cont{
+                flex-direction: column;
+            }
+        }
+        #i1{
+            background-color: red;
+        }
+        #i2{
+            background-color: violet;
+        }
+        #i3{
+            background-color: blue;
+        }
+        #i4{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <!-- <div class="box" id="i1">Box1</div>
+        <div class="box" id="i2">Box2</div>
+        <div class="box" id="i3">Box3</div>
+        <div class="box" id="i4">Box4</div> -->
+        <div class="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nobis ea nam atque recusandae, assumenda\.</p>
+        </div>
+        <div class="i">
+            <img src="faiz.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

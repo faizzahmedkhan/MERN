@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primcolor: rgb(9, 37, 30);
+            --custwidth: 350px;    
+        }
+        .cont{
+            background-color: blue;
+            height: 500px;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: var(--primcolor);
+            width: var(--custwidth);
+            height: 300px;
+            border: 5px solid greenyellow;
+            margin: 3px;
+            padding: 3px;
+            /* box-shadow: 20px 15px 50px 50px rgb(84, 6, 6); */
+            /* box-shadow: inset 15px 10px rgb(53, 6, 106) ; */
+            /* box-shadow: 15px 15px darkcyan, 20px 10px lightcoral; */
+
+        }
+        h2{
+            text-shadow: 2px 3px 3px wheat, 4px 5px 3px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <img height="100px" src="faiz.jpg" alt="">
+            <h2>Welcum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam excepturi, velit natus at vel nemo minima minus quos nobis eum alias dolore, perspiciatis assumenda facilis consequatur suscipit quo omnis voluptatem hic, quas accusantium porro rerum!</p>
+        </div>
+    </div>
+</body>
+</html>

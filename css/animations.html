@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            width: 100vw;
+            height: 100vh;
+            background-color: blanchedalmond;
+            border: 5px black solid;
+        }
+        .box{
+            width: 350px;
+            height: 100px;
+            background: red;
+            border: 3px solid grey;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            /* animation-delay: 1s; */
+            /* animation-name: rmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-timing-function: cubic-bezier(1,-0.44, 0.69, 0.68);
+            animation-direction:alternate-reverse ;
+            animation-fill-mode: forwards; */
+            animation: 3s ease-in 1s infinite alternate none running rmovement;
+        }
+        .box2{
+            width: 350px;
+            height: 100px;
+            background: darkolivegreen;
+            border: 3px solid grey;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            animation: 3s ease-in 1s infinite alternate none running lmovement;
+        }
+        #circle{
+            width: 75px;
+            height: 75px;
+            background: rgb(99, 105, 89);
+            border: 3px solid grey;
+            border-radius: 100px;
+            position: relative;
+            margin: 10px;
+            left: 45%;
+            animation: 3s ease-in 1s 1 alternate none running cmovement;
+        }
+        @keyframes lmovement {
+            from{
+                top: 60vh;
+                left: 850px;
+            }
+            to{
+                top: 60vh;
+                left: 0;
+            }
+        }
+        @keyframes rmovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 850px;
+            }
+        }
+        @keyframes cmovement {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+            30%{
+                top: 15%;
+                left:85%
+            }
+            60%{
+                top: 40%;
+                left: 10%;
+            }
+            100%{
+                top: 30%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+        </div>
+        
+        <div class="box2">
+        </div>
+        <div id="circle"> </div>
+    </div>
+</body>
+</html>

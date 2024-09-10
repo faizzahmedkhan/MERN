@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .container{
+            display: grid;
+            gap: 1rem;
+            background-color: crimson;
+            padding: 4rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            border: 1px solid black;
+        }
+        #R1{
+            transition-duration: 1s;
+        }
+        #R2{
+            transition-duration: 1s;
+        }#R3{
+            transition-duration: 1s;
+        }
+        #T1{
+            transition-duration: 1s;
+        }#T2{
+            transition-duration: 1s;
+        }#T3{
+            transition-duration: 1s;
+        }#S1{
+            transition-duration: 1s;
+        }#S2{
+            transition-duration: 1s;
+        }#S3{
+            transition-duration: 1s;
+        }
+        #R1:hover{
+            transform: rotateX(45deg);
+        }
+        #R2:hover{
+            transform: rotateY(45deg);
+        }
+        #R3:hover{
+            transform: rotateZ(45deg);
+        }
+        #T1:hover{
+            transform: translateX(100px);
+        }
+        #T2:hover{
+            transform: translateY(50px);
+        }
+        #T3:hover{
+            transform:perspective(300px) translateZ(100px);
+        }
+        #S1:hover{
+            transform:scaleX(1.2);
+        }
+        #S2:hover{
+            transform:scaleY(1.2);
+        }
+        #S3:hover{
+            transform:perspective(300px) scaleZ(-5) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"id="R1">R1</div>
+        <div class="item"id="R2">R2</div>
+        <div class="item"id="R3">R3</div>
+        <div class="item"id="T1">T1</div>
+        <div class="item"id="T2">T2</div>
+        <div class="item" id="T3">T3</div>
+        <div class="item" id="S1">S1</div>
+        <div class="item" id="S2">S2</div>
+        <div class="item" id="S3">S3</div>
+    </div>
+</body>
+</html>
